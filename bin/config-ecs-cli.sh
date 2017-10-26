@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Download, Install and Configure ecs-cli
+#Some txt
 
 #set the environment variables
 source ./bin/env.sh
