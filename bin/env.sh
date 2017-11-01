@@ -7,5 +7,5 @@ export ECS_CLUSTER_SIZE=2
 export ECS_INSTANCE_TYPE=t2.large
 export AWS_REGION=us-west-2
 export AWS_KEY_PAIR=class-private
-export DOCKER_REPO=django-web
+export DOCKER_REPO=bmcgair
 export DOCKER_WEB_IMAGE=django-web
