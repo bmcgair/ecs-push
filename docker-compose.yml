@@ -2,17 +2,15 @@ version: '2'
 services:
   web:
     build: .
-    image: "${DOCKER_REPO}/${DOCKER_WEB_IMAGE}"
+    image: ${DOCKER_REPO}/${DOCKER_WEB_IMAGE}
     command: /code/docker-entrypoint.sh
     volumes:
-      - ./:/code
+      - .:/code
     ports:
-      - "8000:8000"
+      - "80:8000"
     links:
       - db
-    environment:
-      - GET_HOSTS_FROM=dns
     labels:
-      kompose.service.type: LoadBalancer
+      kompose.service.type: loadbalancer
   db:
     image: postgres

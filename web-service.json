@@ -1,0 +1,30 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "web",
+    "creationTimestamp": null,
+    "labels": {
+      "io.kompose.service": "web"
+    },
+    "annotations": {
+      "kompose.service.type": "loadbalancer"
+    }
+  },
+  "spec": {
+    "ports": [
+      {
+        "name": "80",
+        "port": 80,
+        "targetPort": 8000
+      }
+    ],
+    "selector": {
+      "io.kompose.service": "web"
+    },
+    "type": "LoadBalancer"
+  },
+  "status": {
+    "loadBalancer": {}
+  }
+}
