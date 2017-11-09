@@ -1,7 +1,7 @@
 #! /bin/bash
 # Tag, Push and Deploy only if it's not a pull request
 # Comment
-source ./bin/env.sh
+source ./bin/env-kube.sh
 
 if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
