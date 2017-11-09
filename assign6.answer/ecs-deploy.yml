@@ -5,7 +5,7 @@ services:
     cpu_shares: 100
     mem_limit: 524288000
   web:
-    image: "${DOCKER_REPO}/${DOCKER_WEB_IMAGE}"
+    image: pdxdiver/django-web
     cpu_shares: 100
     mem_limit: 524288000
     command: /code/docker-entrypoint.sh

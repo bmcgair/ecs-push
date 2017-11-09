@@ -1,0 +1,11 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+vpc_id: vpc-4fb4fe29
+vpn_ip: 52.41.56.222
+bastion_instance: i-0144a5a7caa344378
+dmza_subnet_id: subnet-4228960a
+dmzb_subnet_id: subnet-b54ed7d3
+dmzc_subnet_id: subnet-6cab8f37
+privatea_subnet_id: subnet-152c925d
+privateb_subnet_id: subnet-8648d1e0
+privatec_subnet_id: subnet-a1a88cfa
+# END ANSIBLE MANAGED BLOCK
