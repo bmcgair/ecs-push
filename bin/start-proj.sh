@@ -1,3 +1,3 @@
 #! /bin/bash
-source ./bin/env.sh
-docker-compose up
+source ./bin/env-kube.sh
+kompose up
