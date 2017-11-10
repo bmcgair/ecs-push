@@ -12,6 +12,6 @@ kubectl config set clusters.uswest2.billm.foo.today.certificate-authority-data "
 kubectl config set users.uswest2.bill.foo.today.client-certificate-data "$KUBE_CLIENT_CERTIFICATE"
 kubectl config set users.uswest2.bill.foo.today.client-key-data "$KUBE_CLIENT_KEY"
 
-kubectl --kubeconfig cluster-cfg create -f web-claim0-persistentvolumeclaim.json
-kubectl --kubeconfig cluster-cfg create -f web-deployment.json
-kubectl --kubeconfig cluster-cfg create -f web-service.json
+kubectl --insecure-skip-tls-verify=true create -f web-claim0-persistentvolumeclaim.json
+kubectl --insecure-skip-tls-verify=true create -f web-deployment.json
+kubectl --insecure-skip-tls-verify=true create -f web-service.json
