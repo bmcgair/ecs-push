@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: 
+    server: api.uswest2.bill.foo.today
+  name: "uswest2.bill.foo.today"
+contexts:
+- context:
+    cluster: "uswest2.bill.foo.today"
+    user: "uswest2.bill.foo.today"
+  name: "uswest2.bill.foo.today"
+current-context: "uswest2.bill.foo.today"
+kind: Config
+users:
+- name: "kubernetes-group-xxxxx-admin"
+  user:
+    client-certificate-data: 
+    client-key-data:

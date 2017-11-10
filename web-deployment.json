@@ -42,7 +42,7 @@
             "volumeMounts": [
               {
                 "name": "web-vol",
-                "mountPath": "/code"
+                "mountPath": "/foo"
               }
             ]
           },
