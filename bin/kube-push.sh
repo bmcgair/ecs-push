@@ -3,6 +3,7 @@
 # Comment
 source ./bin/env-kube.sh
 
+docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
 docker push "$DOCKER_REPO"/"$DOCKER_WEB_IMAGE":latest
 
 kubectl config set clusters.uswest2.billm.foo.today.certificate-authority-data "$KUBE_CLUSTER_CERTIFICATE"
