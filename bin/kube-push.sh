@@ -12,4 +12,4 @@ kubectl config set clusters.uswest2a.billm.foo.today.certificate-authority-data 
 kubectl config set users.uswest2a.bill.foo.today.client-certificate-data "$KUBE_CLIENT_CERTIFICATE"
 kubectl config set users.uswest2a.bill.foo.today.client-key-data "$KUBE_CLIENT_KEY"
 
-kubectl set image deployment/bdjweb ghost:"$TRAVIS_COMMIT"
+kubectl set image deployment/bdjweb bmcgair/django-web:"$TRAVIS_COMMIT"
